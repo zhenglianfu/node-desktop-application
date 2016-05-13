@@ -1,0 +1,14 @@
+{
+    "name": "app_name",
+    "description": "node-webkit desktop application",
+    "main": "app/index.html",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zhenglianfu/node-webkit.git"
+    },
+    "dependencies": {
+        "jquery": "^2.0.0"
+    },
+    "readme": "no readme data"
+}

@@ -1,0 +1,25 @@
+html,body,p,ul,li,ol,dd,dl,dt,table,thead,tbody,tfoot,tr,th,td,h1,h2,h3,h4,h5,h6,
+div,span,i,em,b,q,blockquote,code,section,article,nav,header,footer,aside,canvas,audio,video,
+svg,img,input,select,textarea,form,fieldset,hr,label{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 12px;
+    font-family: 微软雅黑, "Microsoft YaHei", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    vertical-align: baseline;
+}
+section,article,footer,header,nav,aside{
+    display: block;
+}
+.container{
+    margin: 0 auto;
+}
+@media screen and (min-width: 1121px){
+    .container{
+        width: 1121px;
+    }
+}
+.content{
+    padding: 10px;
+}
