@@ -11,19 +11,27 @@ var Constants = {
             submenu: [
                 {
                     label: '子菜单1',
+                    key: 's',
+                    modifiers: 'ctrl',    
                     click: function(){
                         
                     }
                 },
-                {label: '子菜单2'}
+                {
+                    label: '子菜单2',
+                    key: 'w',
+                    modifiers: 'ctrl'
+                }
             ]
         },
         {
             label: '菜单2',
             submenu: [
                 {label: '打开文件', click: function(){
+                    $('#_fileSelector').trigger('click');
                 }},
                 {label: '打开文件夹', click: function(){
+                    $('#_folderSelector').trigger('click');
                 }}
             ] 
         },
@@ -38,17 +46,21 @@ var Constants = {
     ],
     CONTEXT_MENUS: [
         {
-            label: '刷新           F5',
+            label: '刷新',
             click: function(){
                 window.location.reload();
-            }
+            },
+            key: 'F5',
+            modifiers: ''
         },
         {
-            label: '强制刷新   ctrl F5',
+            label: '强制刷新',
             click: function(){
                 nw.App.clearCache();
                 window.location.reload();
-            }
+            },
+            key: 'F5',
+            modifiers: 'ctrl'
         },
         {label: '关闭', click: function(){
             if (window.confirm('即将关闭')) {

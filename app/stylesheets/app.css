@@ -23,3 +23,6 @@ section,article,footer,header,nav,aside{
 .content{
     padding: 10px;
 }
+.hidden{
+    display: none !important;
+}

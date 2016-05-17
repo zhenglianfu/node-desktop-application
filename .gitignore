@@ -31,3 +31,9 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+# semantic ui
+semantic/src
+semantic/tasks
+semantic/gulpfile.js
+semantic/dist/components

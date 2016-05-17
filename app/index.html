@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>标题</title>
+        <title>Sample File Viewer</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../semantic/dist/semantic.css">
         <link rel="stylesheet" href="stylesheets/app.css">
         <link rel="stylesheet" href="stylesheets/theme.css">
     </head>
     <body class="default">
         <div class="container">
             <div class="content">
-                <p>hello world</p>  
-                <input type="file" accept="folder">  
+                
             </div>
+        </div>
+        <div class="hidden">
+            <!-- file inputs -->
+            <input type="file" id="_fileSelector">
+            <input type="file" id="_multiFileSelector">
+            <input type="file" id="_folderSelector" nwdirectory="true">
         </div>
         <script src="../node_modules/jquery/dist/jquery.js"></script>
         <script src="app.js"></script>     
